@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Copy and Screenshot",
+  "version": "1.0",
+  "description": "Copies URLs as Markdown and takes a screenshot.",
+ 
+  "permissions": [
+    "contextMenus",
+    "clipboardWrite",
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "http://localhost:8000/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
